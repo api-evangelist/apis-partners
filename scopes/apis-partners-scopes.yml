@@ -1,0 +1,22 @@
+generated: '2026-07-17'
+method: searched
+source: https://apis.pe/.well-known/openid-configuration
+note: >-
+  Scopes advertised by the Umbraco Delivery API member OIDC discovery document at apis.pe.
+  This is the CMS member-auth surface, not a business API of Apis Partners.
+schemes:
+- name: oauth2
+  source: well-known/apis-partners-openid-configuration.json
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://www.apis.pe/umbraco/delivery/api/v1/security/member/authorize
+    tokenUrl: https://www.apis.pe/umbraco/delivery/api/v1/security/member/token
+scopes:
+- scope: openid
+  description: OpenID Connect authentication; returns an ID token identifying the member.
+  flows: [authorizationCode]
+  sources: [well-known/apis-partners-openid-configuration.json]
+- scope: offline_access
+  description: Issues a refresh token so the client can obtain new access tokens without re-authentication.
+  flows: [authorizationCode]
+  sources: [well-known/apis-partners-openid-configuration.json]

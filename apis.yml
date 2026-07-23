@@ -1,9 +1,29 @@
 aid: apis-partners
 name: Apis Partners
-description: 'Apis Partners is a company surfaced as a portfolio company of anthemis and added to the
-  API Evangelist network as a stub for enrichment. Sector: venture. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Apis Partners is a London-headquartered private equity asset manager investing
+  in tech-enabled financial infrastructure and financial services businesses across
+  Europe and Growth Markets. With additional offices in Dubai and Singapore, the firm
+  backs companies in payments, digital banking, insurance technology and lending, taking
+  minority positions with governance rights. Apis manages approximately $2.3 billion in
+  assets under management and reports over $1 billion in portfolio realizations, with
+  portfolio companies reaching more than 244 million people. It was surfaced as a portfolio
+  company of Anthemis and added to the API Evangelist network for enrichment; the firm is
+  an investor rather than an API producer, so it exposes no public developer API surface.
 url: https://raw.githubusercontent.com/api-evangelist/apis-partners/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://apis.pe/wp-content/uploads/2021/03/apis-logo.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -16,9 +36,43 @@ modified: '2026-07-17'
 tags:
 - Company
 - Venture
+- Private Equity
+- Fintech
+- Financial Services
+- Payments
+- Investor
+- Emerging Markets
 apis: []
+common:
+- type: DomainSecurity
+  url: security/apis-partners-domain-security.yml
+- type: Website
+  url: https://apis.pe/
+- type: About
+  url: https://apis.pe/about-us/
+- type: Team
+  url: https://apis.pe/our-team/
+- type: Portfolio
+  url: https://apis.pe/portfolio/our-portfolio/
+- type: Blog
+  url: https://apis.pe/news/
+- type: Support
+  url: https://apis.pe/contact-us/
+- type: PrivacyPolicy
+  url: https://apis.pe/privacy-policy/
+- type: WellKnown
+  url: well-known/apis-partners-well-known.yml
+- type: Authentication
+  url: authentication/apis-partners-authentication.yml
+- type: OAuthScopes
+  url: scopes/apis-partners-scopes.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

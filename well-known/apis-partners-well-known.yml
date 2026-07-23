@@ -1,0 +1,22 @@
+generated: '2026-07-17'
+method: searched
+source: https://apis.pe/.well-known/
+host: https://apis.pe
+note: >-
+  apis.pe runs on the Umbraco CMS. The site exposes a valid OpenID Connect discovery
+  document at /.well-known/openid-configuration advertising the Umbraco Delivery API
+  member authorization/token endpoints (issuer https://www.apis.pe/). No security.txt,
+  RFC 8414 oauth-authorization-server, RFC 9727 api-catalog, or ai-plugin.json is published.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  content_type: application/json
+  file: apis-partners-openid-configuration.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
