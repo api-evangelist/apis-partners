@@ -11,6 +11,17 @@ description: >-
   company of Anthemis and added to the API Evangelist network for enrichment; the firm is
   an investor rather than an API producer, so it exposes no public developer API surface.
 url: https://raw.githubusercontent.com/api-evangelist/apis-partners/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
